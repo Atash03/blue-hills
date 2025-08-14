@@ -1,0 +1,18 @@
+{% css %}
+{% include "css/products/specification-item.css" %}
+{% endcss %}
+<div class="specification-item">
+  <div class="specification-header">
+    <svg class="specification-checkmark" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M18.0002 5.5L3.85059 14.9911C4.71657 15.7461 7.14442 18.1189 7.14442 18.1189C7.70113 18.8091 8.52072 18.4065 8.86093
+          18.1189L18.0002 5.5Z"
+        fill="#29255F"/>
+      <path d="M0 11.3242L3.34023 14.5599L7.46912 11.54C4.12889 13.2225 1.09794 12.0972 0 11.3242Z" fill="#29255F"/>
+    </svg>
+    <h1 class="specification-label">{{ title }}</h1>
+  </div>
+  <div class="specification-content">
+    <p class="specification-value">{{ description }}</p>
+  </div>
+</div>

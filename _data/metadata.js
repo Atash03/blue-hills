@@ -1,11 +1,11 @@
 export default {
-	title: "Eleventy Base Blog v9",
+	title: "Blue Hills",
 	url: "https://example.com/",
 	language: "en",
-	description: "I am writing about my experiences as a naval navel-gazer.",
+	description: "Blue Hills - Premium-grade paper for precision and performance",
 	author: {
-		name: "Your Name Here",
-		email: "youremailaddress@example.com",
+		name: "Atash03",
+		email: "hugokarp12@gmail.com",
 		url: "https://example.com/about-me/"
 	}
 }

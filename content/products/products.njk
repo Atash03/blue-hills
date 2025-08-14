@@ -1,0 +1,96 @@
+---js
+const eleventyNavigation = {
+	key: "Products",
+	order: 3
+};
+---
+{% css %}
+{% include "css/products/index.css" %}
+{% endcss %}
+
+<div class="products-page">
+  <section class="hero-section">
+    <img class="hero-background-image" src="./assets/background.png" alt="Manufacturing facility" />
+    
+    <h1 class="hero-title">Our Products</h1>
+    <p class="hero-subtitle">We specialize in the manufacturing of:</p>
+    
+    <div class="products-grid">
+      {% set title = "Copy Paper" %}
+      {% set description = "Ideal for office, academic, and professional use" %}
+      {% set filterId = "paper" %}
+      {% set gradientId = "paper" %}
+      {% include "components/product-card.njk" %}
+
+      {% set title = "Offset Paper" %}
+      {% set description = "Perfect for offset printing applications" %}
+      {% set additionalClass = "offset-paper" %}
+      {% set filterId = "offset" %}
+      {% set gradientId = "offset" %}
+      {% include "components/product-card.njk" %}
+
+      {% set title = "Book & Notebook Paper" %}
+      {% set description = "Lightweight, smooth paper for writing and publishing" %}
+      {% set additionalClass = null %}
+      {% set filterId = "book" %}
+      {% set gradientId = "book" %}
+      {% include "components/product-card.njk" %}
+    </div>
+  </section>
+
+  <div class="hero-divider"></div>
+
+  <div class="container">
+      <section class="specifications-section">
+    <h1 class="specifications-title">Specifications</h1>
+
+    <svg class="specifications-decoration" width="156" height="167" viewBox="0 0 156 167" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_decoration)">
+          <path d="M23.2176 103.173C25.6773 50.8318 23.2176 23.2837 6 4L89.6283 4L143.741 59.0962L143.741 152.76C104.386 81.1347 23.2176 103.173 23.2176 103.173Z" fill="url(#paint0_linear_decoration)"/>
+          <path d="M143.741 4L6 4C42.8949 26.0385 132.191 101.017 143.741 152.76L143.741 4Z" fill="#00AEEF"/>
+        </g>
+        <defs>
+            <filter id="filter0_d_decoration" x="0" y="0" width="155.741" height="166.76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="3" dy="5"/>
+            <feGaussianBlur stdDeviation="4.5"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_decoration"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_decoration" result="shape"/>
+          </filter>
+          <linearGradient id="paint0_linear_decoration" x1="74.8704" y1="4" x2="74.8704" y2="152.76" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#29255F"/>
+            <stop offset="1" stop-color="#00AEEF"/>
+          </linearGradient>
+        </defs>
+    </svg>
+    
+    <div class="specifications-content">
+      <img class="specifications-image" src="./assets/specifications-main.jpg" alt="Blue Hills manufacturing facility" />
+      
+      <div class="specifications-list">
+        {% set title = "Grammage Range:" %}
+        {% set description = "40gsm to 120gsm" %}
+        {% include "components/specification-item.njk" %}
+
+        {% set title = "Composition:" %}
+        {% set description = "100% virgin, bleached pulp" %}
+        {% include "components/specification-item.njk" %}
+
+        {% set title = "Surface:" %}
+        {% set description = "Smooth finish with high brightness" %}
+        {% include "components/specification-item.njk" %}
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <section class="certification-section">
+    <div class="container certification-container">
+      <p class="certification-text">Blue Hills PM (ES Gok depeler) has been certified with following certificates:</p>
+      <a href="#" class="certification-button">Show our certificates</a>
+    </div>
+  </section>
+</div>

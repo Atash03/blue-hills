@@ -1,0 +1,43 @@
+/* Specification Item */
+.specification-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.specification-header {
+  background: var(--blue-hills-secondary);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  position: relative;
+}
+
+.specification-checkmark {
+  width: 18px;
+  height: 30px;
+}
+
+.specification-label {
+  color: var(--blue-hills-primary);
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.specification-content {
+  background: var(--blue-hills-white);
+  border-left: 1px solid var(--blue-hills-secondary);
+  padding: 1.25rem 1.875rem;
+  display: flex;
+}
+
+.specification-value {
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}

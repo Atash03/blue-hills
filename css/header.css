@@ -1,0 +1,154 @@
+.main-header {
+	background: var(--blue-hills-white);
+	height: 88px;
+	border-bottom: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	max-width: 1440px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1440px;
+	padding: 0 40px;
+	font-family: var(--font-inter);
+}
+
+.header-logo {
+	flex-shrink: 0;
+}
+
+.header-logo .logo-image {
+	width: 135px;
+	height: 50px;
+}
+
+.nav-item {
+	display: inline-block;
+	position: relative;
+}
+
+.nav-item a {
+	color: var(--blue-hills-primary);
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	transition: color 0.2s ease;
+	position: relative;
+}
+
+.nav-item a:visited {
+	color: var(--blue-hills-primary);
+}
+
+.nav-item a:hover,
+.nav-item a:visited:hover {
+	color: var(--blue-hills-secondary);
+}
+
+.nav-item a[aria-current="page"] {
+	position: relative;
+}
+
+.nav-item a[aria-current="page"]::after {
+	content: "";
+	position: absolute;
+	bottom: -9px;
+	left: 6.5px;
+	right: 6.5px;
+	height: 2px;
+	background: var(--blue-hills-secondary);
+}
+
+.header-nav {
+	display: flex;
+	gap: 36px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.language-selector {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 14px 10px 14px;
+	border: 1px solid #efefef;
+	border-radius: 6px;
+	background: var(--blue-hills-white);
+	font-family: "Inter", -apple-system, Roboto, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.language-selector:hover {
+	border-color: var(--blue-hills-secondary);
+	background-color: #f8f9fa;
+}
+
+.language-selector span {
+	color: #000;
+}
+
+.flag-icon {
+	width: 22px;
+	height: 22px;
+}
+
+.language-selector svg:last-child {
+	width: 16px;
+	height: 16px;
+}
+
+@media (max-width: 1200px) {
+	.main-header {
+		padding: 0 20px;
+	}
+
+	.header-nav {
+		gap: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	.main-header {
+		height: auto;
+		flex-direction: column;
+		gap: 1rem;
+		padding: 1rem 20px;
+	}
+
+	.header-nav {
+		position: static;
+		transform: none;
+		flex-wrap: wrap;
+		gap: 1rem;
+		justify-content: center;
+	}
+
+	.nav-item a[aria-current="page"]::after {
+		bottom: -15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.main-header {
+		padding: 1rem;
+	}
+
+	.header-nav {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.language-selector {
+		width: 100%;
+		justify-content: center;
+	}
+}
