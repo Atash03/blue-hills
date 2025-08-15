@@ -6,7 +6,12 @@ const eleventyNavigation = {
 ---
 {% css %}
 {% include "css/products/index.css" %}
+{% include "css/products/certifications-modal.css" %}
 {% endcss %}
+
+{% js %}
+{% include "js/modal.js" %}
+{% endjs %}
 
 <div class="products-page">
   <section class="hero-section">
@@ -90,7 +95,9 @@ const eleventyNavigation = {
   <section class="certification-section">
     <div class="container certification-container">
       <p class="certification-text">Blue Hills PM (ES Gok depeler) has been certified with following certificates:</p>
-      <a href="#" class="certification-button">Show our certificates</a>
+      <a class="certification-button">Show our certificates</a>
     </div>
   </section>
+
+  {% include "components/certifications-modal.njk" %}
 </div>
