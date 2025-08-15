@@ -1,0 +1,23 @@
+{% css %}
+{% include "css/shared/button.css" %}
+{% endcss %}
+<button class="cta-button {{ 'cta-button--' + (buttonVariant or 'primary') }}">
+    <span class="button-text">{{ buttonText or 'Get in touch!' }}</span>
+    <div class="page-fold-decoration">
+        <svg class="page-fold-svg" width="46" height="34" viewBox="0 0 46 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g class="page-fold-group">
+                <path
+                    class="page-fold-shadow"
+                    d="M18.875 15.32C19.429 3.54 18.875 -2.66 15 -7H33.821L46 5.4V26.48C37.143 10.36 18.875 15.32 18.875 15.32Z"
+                    fill="url(#pageFoldGradient)"/>
+                <path class="page-fold-corner" d="M46 -7H15C23.304 -2.04 43.401 14.8348 46 26.48V-7Z" fill="white"/>
+            </g>
+            <defs>
+                <linearGradient id="pageFoldGradient" x1="30.5" y1="-7" x2="30.5" y2="26.48" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#29255F"/>
+                    <stop offset="1" stop-color="#00AEEF"/>
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+</button>

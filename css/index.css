@@ -12,7 +12,6 @@
 :root {
 	--color-gray-20: #e0e0e0;
 	--color-gray-50: #c0c0c0;
-	--color-gray-90: #333;
 
 	/* project colors */
 	--blue-hills-primary: #29255f;
@@ -22,7 +21,7 @@
 
 	--background-color: #fff;
 
-	--text-color: var(--color-gray-90);
+	--text-color: #535353;
 	--text-color-link: #082840;
 	--text-color-link-active: #5f2b48;
 

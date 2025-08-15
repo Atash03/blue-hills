@@ -1,0 +1,104 @@
+.cta-button {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 55px;
+	padding: 16px 40px 16px 30px;
+	background: #00aeef;
+	border: none;
+	color: #29255f;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	z-index: 1;
+	margin-top: 2rem;
+}
+
+.button-text {
+	position: relative;
+	z-index: 3;
+}
+
+.page-fold-decoration {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 46px;
+	height: 34px;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.page-fold-svg {
+	width: 100%;
+	height: 100%;
+	transform: translateX(100%) translateY(-50%);
+	transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-fold-group {
+	transform-origin: center;
+}
+
+.page-fold-shadow {
+	filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.page-fold-corner {
+	opacity: 0.9;
+}
+
+.cta-button:hover {
+	box-shadow: 0 4px 12px rgba(0, 174, 239, 0.3);
+}
+
+.cta-button:hover .page-fold-svg {
+	transform: translateX(0%) translateY(0%);
+}
+
+.cta-button:hover .page-fold-group {
+	animation: pageTurn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.cta-button:active {
+	transform: translateY(-1px);
+}
+
+@media (max-width: 480px) {
+	.cta-button {
+		padding: 0.875rem 2rem 0.875rem 1.5rem;
+		font-size: 1rem;
+		margin-top: 1.5rem;
+	}
+}
+
+/* Button Variants */
+.cta-button--primary {
+	background: #00aeef;
+	color: #29255f;
+	border: none;
+}
+
+.cta-button--secondary {
+	background: #00aeef;
+	color: #fff;
+	border: 1px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(to right, #1fb5ed, white);
+}
+
+@keyframes pageTurn {
+	0% {
+		transform: perspective(200px) rotateY(0deg);
+	}
+	50% {
+		transform: perspective(200px) rotateY(-15deg);
+	}
+	100% {
+		transform: perspective(200px) rotateY(0deg);
+	}
+}

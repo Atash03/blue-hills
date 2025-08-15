@@ -1,0 +1,383 @@
+/* About Page Styles - Figma Design Implementation */
+.about-page {
+	background: var(--blue-hills-white);
+}
+
+.about-container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 2.5rem;
+}
+
+.text-highlight {
+	color: var(--blue-hills-secondary);
+}
+
+/* Hero Section */
+.about-hero {
+	position: relative;
+	padding: 4rem 0 6rem;
+	background: var(--blue-hills-white);
+}
+
+.hero-side-image {
+	position: absolute;
+	left: -100px;
+	top: -30px;
+	width: 500px;
+	height: 543px;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.hero-content {
+	position: relative;
+	z-index: 2;
+}
+
+.page-title {
+	text-align: center;
+	color: var(--blue-hills-primary);
+	font-size: 2.5rem;
+	font-weight: 600;
+	line-height: 1.4;
+	text-transform: uppercase;
+	margin: 0 0 1.5rem;
+}
+
+.title-divider {
+	height: 2px;
+	background: linear-gradient(
+		90deg,
+		rgba(0, 174, 239, 0) 0%,
+		#00aeef 50.39%,
+		rgba(0, 174, 239, 0) 100%
+	);
+}
+
+.hero-main {
+	display: grid;
+	grid-template-columns: 670px 1fr;
+	gap: 4rem;
+	align-items: start;
+	margin-left: 2.5rem;
+}
+
+.hero-text {
+	margin-top: 6rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-headline {
+	color: var(--blue-hills-primary);
+	font-size: 2.25rem;
+	font-weight: 700;
+	line-height: 1.4;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.hero-description {
+	margin-top: 6rem;
+}
+
+.hero-description p {
+	color: #535353;
+	font-size: 1rem;
+	line-height: 1.66;
+	font-weight: 400;
+	margin: 0;
+}
+
+/* Team Section */
+.team-section {
+	padding: 0 0 2rem 0;
+}
+
+.team-image {
+	width: 100%;
+	height: 475px !important;
+	object-fit: cover;
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+
+/* Mission & Vision Section */
+.mission-vision-section {
+	padding: 0 0 4rem 0;
+}
+
+.section-divider {
+	height: 2px;
+	background: linear-gradient(
+		90deg,
+		rgba(0, 174, 239, 0) 0%,
+		#00aeef 50.39%,
+		rgba(0, 174, 239, 0) 100%
+	);
+	margin: 0 0 4rem;
+}
+
+.mission-vision-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+}
+
+/* Second Divider */
+.second-divider {
+	padding: 4rem 0 0;
+}
+
+/* Sustainability Section */
+.sustainability-section {
+	padding: 2rem 0 4rem;
+}
+
+.sustainability-content {
+	display: grid;
+	grid-template-columns: 1fr 670px;
+	gap: 4rem;
+	align-items: center;
+}
+
+.sustainability-text {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.section-title {
+	color: var(--blue-hills-primary);
+	font-size: 1.625rem;
+	font-weight: 700;
+	line-height: 1.4;
+	text-transform: uppercase;
+	margin: 0 0 1rem;
+}
+
+.section-description {
+	color: #535353;
+	font-size: 1rem;
+	line-height: 1.54;
+	font-weight: 400;
+	margin: 0 0 2rem;
+}
+
+.features-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.feature-item {
+	display: flex;
+	align-items: center;
+	gap: 0.625rem;
+}
+
+.feature-item .checkmark {
+	width: 18px;
+	height: 18px;
+	flex-shrink: 0;
+}
+
+.feature-item span {
+	color: var(--blue-hills-primary);
+	font-family: "Inter", -apple-system, Roboto, Helvetica, sans-serif;
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+
+.sustainability-image img {
+	width: 100%;
+	height: 100%;
+	max-height: 375px;
+	object-fit: cover;
+}
+
+/* Dark Divider */
+.dark-divider {
+	height: 10px;
+	width: auto;
+	margin: 0 2.5rem;
+	background: var(--blue-hills-primary);
+}
+
+/* Why Choose Section */
+.why-choose-section {
+	background: var(--blue-hills-secondary);
+	padding: 3.75rem 0 0 0;
+	position: relative;
+}
+
+.why-choose-content {
+	display: grid;
+	grid-template-columns: 557px 1fr;
+	gap: 4rem;
+}
+
+.why-choose-image {
+	position: relative;
+	height: 390px;
+	overflow: hidden;
+}
+
+.why-choose-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 78px;
+	background: rgba(0, 174, 239, 0.5);
+}
+
+.why-choose-text {
+	padding: 0 2rem;
+}
+
+.dark-title {
+	color: var(--blue-hills-primary);
+}
+
+.dark-features .feature-item span {
+	color: var(--blue-hills-primary);
+	text-transform: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+	.about-container {
+		max-width: 100%;
+		padding: 0 2rem;
+	}
+
+	.hero-side-image {
+		width: 400px;
+		height: 434px;
+	}
+
+	.hero-main {
+		grid-template-columns: 1fr 1fr;
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	.about-container {
+		padding: 0 1.5rem;
+	}
+
+	.hero-main {
+		gap: 2rem;
+	}
+
+	.sustainability-content,
+	.why-choose-content {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.why-choose-image {
+		order: -1;
+	}
+}
+
+@media (max-width: 768px) {
+	.page-title {
+		font-size: 2rem;
+	}
+
+	.hero-headline {
+		font-size: 1.75rem;
+	}
+
+	.hero-main {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.hero-side-image {
+		position: static;
+		width: 100%;
+		max-width: 400px;
+		height: auto;
+		margin: 0 auto 2rem;
+		display: block;
+	}
+
+	.hero-text {
+		margin-top: 0;
+	}
+
+	.hero-description {
+		margin-top: 2rem;
+	}
+
+	.mission-vision-grid {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+
+	.mission-icon-container,
+	.vision-icon-container {
+		display: none;
+	}
+
+	.mission-card .card-content,
+	.vision-card .card-content {
+		text-align: left;
+		max-width: none;
+		margin: 0;
+	}
+
+	.why-choose-text {
+		padding: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.about-container {
+		padding: 0 1rem;
+	}
+
+	.about-hero {
+		padding: 2rem 0 3rem;
+	}
+
+	.page-title {
+		font-size: 1.75rem;
+		margin: 1rem 0;
+	}
+
+	.hero-headline {
+		font-size: 1.5rem;
+	}
+
+	.section-title {
+		font-size: 1.375rem;
+	}
+
+	.card-content {
+		padding: 1.5rem;
+	}
+
+	.mission-card,
+	.vision-card {
+		height: auto;
+		min-height: 160px;
+	}
+
+	.why-choose-section {
+		padding: 2rem 0;
+	}
+}

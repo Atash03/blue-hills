@@ -1,0 +1,163 @@
+---js
+const eleventyNavigation = {
+  key: "About",
+  order: 2
+};
+--- 
+{% css %}
+{% include "css/about/index.css" %}
+{% endcss %}
+
+<div class="about-page">
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="about-container">
+      <div class="hero-content">
+        <img 
+          class="hero-side-image" 
+          src="./assets/background.png" 
+          alt="Blue Hills manufacturing facility"
+        />
+        <h1 class="page-title">About us</h1>
+        <div class="title-divider"></div>
+        <div class="hero-main">
+          <div class="hero-text">
+            <h2 class="hero-headline">
+              Premium-grade paper engineered for 
+              <span class="text-highlight">precision</span>,
+              <span class="text-highlight">performance</span>, and 
+              <span class="text-highlight">sustainability</span>.
+            </h2>
+          </div>
+          <div class="hero-description">
+            <p>Founded in 2022 and launching production in early 2025, Blue Hills PM is Turkmenistan's new-generation paper manufacturer, dedicated to producing premium white office paper for both local and international markets. Equipped with cutting-edge technology and a strong focus on quality, we manufacture smooth, bright, and durable paper tailored for high-speed copiers, printers, and publishing applications. Our top-grade offset and copy paper is known for sharp image reproduction and reliable performance. Whether it's printing corporate contracts or publishing textbooks at scale — Blue Hills delivers with precision, every time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Image Section -->
+  <section class="team-section">
+    <div class="about-container">
+      <img 
+        class="team-image" 
+        src="./assets/team.png" 
+        alt="Blue Hills PM team members"
+      />
+    </div>
+  </section>
+
+  <!-- Mission & Vision Section -->
+  <section class="mission-vision-section">
+    <div class="about-container">
+      <div class="mission-vision-grid">
+        {% include "components/about/mission-card.njk" %}
+        {% include "components/about/vision-card.njk" %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Second Divider -->
+  <section class="second-divider">
+    <div class="section-divider"></div>
+  </section>
+
+  <!-- Sustainability Section -->
+  <section class="sustainability-section">
+    <div class="about-container">
+      <div class="sustainability-content">
+        <div class="sustainability-text">
+          <div class="sustainability-header">
+            <h2 class="section-title">Sustainability Commitment</h2>
+            <p class="section-description">We believe in responsible production. That's why we are implementing eco-conscious practices across our supply chain:</p>
+          </div>
+          <div class="features-list">
+            <div class="feature-item">
+              <svg class="checkmark" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0002 4.5L3.85059 13.9911C4.71657 14.7461 7.14442 17.1189 7.14442 17.1189C7.70113 17.8091 8.52072 17.4065 8.86093 17.1189L18.0002 4.5Z" fill="#29255F"/>
+                <path d="M0 10.3242L3.34023 13.5598L7.46912 10.5399C4.12889 12.2224 1.09794 11.0972 0 10.3242Z" fill="#29255F"/>
+              </svg>
+              <span>MINIMIZING WASTE AND OPTIMIZING WATER USAGE</span>
+            </div>
+            <div class="feature-item">
+              <svg class="checkmark" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0002 4.5L3.85059 13.9911C4.71657 14.7461 7.14442 17.1189 7.14442 17.1189C7.70113 17.8091 8.52072 17.4065 8.86093 17.1189L18.0002 4.5Z" fill="#29255F"/>
+                <path d="M0 10.3242L3.34023 13.5598L7.46912 10.5399C4.12889 12.2224 1.09794 11.0972 0 10.3242Z" fill="#29255F"/>
+              </svg>
+              <span>ENERGY-EFFICIENT MACHINERY</span>
+            </div>
+            <div class="feature-item">
+              <svg class="checkmark" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0002 4.5L3.85059 13.9911C4.71657 14.7461 7.14442 17.1189 7.14442 17.1189C7.70113 17.8091 8.52072 17.4065 8.86093 17.1189L18.0002 4.5Z" fill="#29255F"/>
+                <path d="M0 10.3242L3.34023 13.5598L7.46912 10.5399C4.12889 12.2224 1.09794 11.0972 0 10.3242Z" fill="#29255F"/>
+              </svg>
+              <span>EXPLORING FSC CERTIFICATION AND OTHER GREEN STANDARDS</span>
+            </div>
+          </div>
+        </div>
+        <div class="sustainability-image">
+          <img src="./assets/sustainability.jpg" alt="Manufacturing facility showing sustainable practices" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dark Divider -->
+  <div class="dark-divider"></div>
+
+  <!-- Why Choose Section -->
+  <section class="why-choose-section">
+    <div class="about-container">
+      <div class="why-choose-content">
+        <div class="why-choose-image">
+          <img src="./assets/why-choose.jpg" alt="Blue Hills manufacturing equipment" />
+          <div class="image-overlay"></div>
+        </div>
+        <div class="why-choose-text">
+          <h2 class="section-title dark-title">Why choose Blue hills PM?</h2>
+          <div class="features-list dark-features">
+            <div class="feature-item">
+              <svg class="checkmark" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0002 4.5L3.85059 13.9911C4.71657 14.7461 7.14442 17.1189 7.14442 17.1189C7.70113 17.8091 8.52072 17.4065 8.86093 17.1189L18.0002 4.5Z" fill="#29255F"/>
+                <path d="M0 10.3242L3.34023 13.5598L7.46912 10.5399C4.12889 12.2224 1.09794 11.0972 0 10.3242Z" fill="#29255F"/>
+              </svg>
+              <span>Premium quality and consistency</span>
+            </div>
+            <div class="feature-item">
+              <svg class="checkmark" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0002 4.5L3.85059 13.9911C4.71657 14.7461 7.14442 17.1189 7.14442 17.1189C7.70113 17.8091 8.52072 17.4065 8.86093 17.1189L18.0002 4.5Z" fill="#29255F"/>
+                <path d="M0 10.3242L3.34023 13.5598L7.46912 10.5399C4.12889 12.2224 1.09794 11.0972 0 10.3242Z" fill="#29255F"/>
+              </svg>
+              <span>Competitive pricing for bulk orders</span>
+            </div>
+            <div class="feature-item">
+              <svg class="checkmark" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0002 4.5L3.85059 13.9911C4.71657 14.7461 7.14442 17.1189 7.14442 17.1189C7.70113 17.8091 8.52072 17.4065 8.86093 17.1189L18.0002 4.5Z" fill="#29255F"/>
+                <path d="M0 10.3242L3.34023 13.5598L7.46912 10.5399C4.12889 12.2224 1.09794 11.0972 0 10.3242Z" fill="#29255F"/>
+              </svg>
+              <span>Fast and reliable logistics</span>
+            </div>
+            <div class="feature-item">
+              <svg class="checkmark" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0002 4.5L3.85059 13.9911C4.71657 14.7461 7.14442 17.1189 7.14442 17.1189C7.70113 17.8091 8.52072 17.4065 8.86093 17.1189L18.0002 4.5Z" fill="#29255F"/>
+                <path d="M0 10.3242L3.34023 13.5598L7.46912 10.5399C4.12889 12.2224 1.09794 11.0972 0 10.3242Z" fill="#29255F"/>
+              </svg>
+              <span>Environmentally responsible production</span>
+            </div>
+            <div class="feature-item">
+              <svg class="checkmark" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0002 4.5L3.85059 13.9911C4.71657 14.7461 7.14442 17.1189 7.14442 17.1189C7.70113 17.8091 8.52072 17.4065 8.86093 17.1189L18.0002 4.5Z" fill="#29255F"/>
+                <path d="M0 10.3242L3.34023 13.5598L7.46912 10.5399C4.12889 12.2224 1.09794 11.0972 0 10.3242Z" fill="#29255F"/>
+              </svg>
+              <span>Professional support and tailored service</span>
+            </div>
+          </div>
+          {% set buttonText = "Get in touch!" %}
+          {% set buttonVariant = "secondary" %}
+          {% include "components/shared/button.njk" %}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

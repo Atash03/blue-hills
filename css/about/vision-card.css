@@ -1,0 +1,84 @@
+.vision-card {
+	background: var(--blue-hills-primary);
+	height: 214px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.vision-decoration {
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 44px;
+	height: 47px;
+	filter: drop-shadow(3px 5px 9px rgba(0, 0, 0, 0.12));
+}
+
+.vision-content {
+	position: relative;
+	z-index: 2;
+	padding: 2rem;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	padding-right: 13rem;
+}
+
+.vision-title {
+	color: var(--blue-hills-white);
+	font-size: 1.625rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.4;
+	margin: 0 0 1rem 0;
+}
+
+.vision-text {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 1rem;
+	line-height: 1.66;
+	font-weight: 400;
+	margin: 0;
+	max-width: 347px;
+}
+
+.vision-icon {
+	position: absolute;
+	right: -16px;
+	top: 30px;
+	width: 200px;
+	height: 200px;
+	z-index: 1;
+}
+
+@media (max-width: 768px) {
+	.vision-content {
+		padding: 2rem;
+	}
+
+	.vision-icon {
+		width: 150px;
+		height: 150px;
+		right: -8px;
+		top: 30px;
+	}
+}
+
+@media (max-width: 480px) {
+	.vision-card {
+		height: auto;
+		min-height: 180px;
+	}
+
+	.vision-content {
+		padding: 1.5rem;
+	}
+
+	.vision-icon {
+		display: none;
+	}
+}
