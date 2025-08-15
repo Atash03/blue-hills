@@ -1,0 +1,143 @@
+.footer-section {
+  background: #fff;
+  padding: 40px;
+}
+
+.footer-content {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.footer-map {
+  position: relative;
+  width: 100%;
+  height: 484px;
+}
+
+.map-top-bar {
+  width: 50.44%;
+  height: 11px;
+  background: #00AEEF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.map-bottom-bar {
+  width: 49.56%;
+  height: 11px;
+  background: #00AEEF;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-label {
+  color: #00AEEF;
+  font-family: Outfit, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.info-text {
+  color: #29255F;
+  font-family: Outfit, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 180%;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.social-link svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .footer-map {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 30px 20px;
+  }
+  
+  .footer-content {
+    gap: 30px;
+  }
+  
+  .footer-map {
+    height: 250px;
+  }
+  
+  .info-text {
+    font-size: 18px;
+  }
+  
+  .info-label {
+    font-size: 14px;
+  }
+}

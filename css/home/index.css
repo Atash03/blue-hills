@@ -9,3 +9,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Import section styles */
+@import "products-section.css";
+@import "partners-section.css";
+@import "cta-section.css";
+@import "contact-section.css";
+@import "feedback-section.css";
+@import "footer-section.css";
