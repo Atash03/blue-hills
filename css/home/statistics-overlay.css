@@ -1,0 +1,147 @@
+.statistics-overlay {
+	width: 100%;
+	position: relative;
+	z-index: 2;
+	bottom: 0;
+}
+
+.statistics-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+.stat-item {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 25px 20px 25px;
+	border-bottom: 0.25px solid #d6d6d6;
+	border-right: 1px solid #d6d6d6;
+}
+
+.stat-item:nth-child(3n) {
+	border-right: none;
+}
+
+.stat-item.transparent {
+	border-bottom: none;
+	border-right: 1px solid #d6d6d6;
+	background-color: white;
+}
+
+.stat-number {
+	font-family: "Outfit", -apple-system, Roboto, Helvetica, sans-serif;
+	font-size: 80px;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	align-self: flex-start;
+	background: linear-gradient(118deg, #fff 18.38%, #00aeef 81.15%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 8px;
+}
+
+.stat-label {
+	color: #fff;
+	text-align: right;
+	font-family: "Outfit", -apple-system, Roboto, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 180%;
+	align-self: flex-end;
+}
+
+@media (max-width: 1200px) {
+	.statistics-grid {
+		padding-top: 350px;
+		gap: 30px;
+	}
+
+	.stat-number {
+		font-size: 60px;
+	}
+
+	.stat-label {
+		font-size: 14px;
+		width: 100px;
+	}
+}
+
+@media (max-width: 768px) {
+	.statistics-grid {
+		padding-top: 250px;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 20px;
+	}
+
+	.stat-1 {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.stat-2 {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.stat-3 {
+		grid-column: 3;
+		grid-row: 1;
+	}
+
+	.stat-4 {
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.stat-5 {
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	.stat-number {
+		font-size: 40px;
+	}
+
+	.stat-label {
+		font-size: 12px;
+		width: 80px;
+	}
+}
+
+@media (max-width: 480px) {
+	.statistics-grid {
+		padding-top: 200px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	.stat-3 {
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.stat-4 {
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	.stat-5 {
+		grid-column: 1;
+		grid-row: 3;
+	}
+
+	.stat-number {
+		font-size: 32px;
+	}
+
+	.stat-label {
+		font-size: 11px;
+		width: 70px;
+	}
+}

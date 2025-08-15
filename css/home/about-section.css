@@ -1,0 +1,130 @@
+.about-section {
+  width: 100%;
+  padding: 0 0 100px;
+  background: #fff;
+}
+
+.about-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-title {
+  color: #29255f;
+  font-family: "Outfit", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.about-description {
+  color: #535353;
+  font-family: "Outfit", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 166%;
+  margin-bottom: 40px;
+}
+
+.about-image {
+  position: relative;
+}
+
+.blue-rectangle {
+  position: absolute;
+  left: -15px;
+  bottom: -15px;
+  height: 100%;
+  width: 100%;  
+  border-radius: 8px;
+  background-color: var(--blue-hills-secondary);
+  z-index: 1;
+}
+
+.team-image {
+  width: 100%;
+  height: auto;
+  max-width: 670px;
+  aspect-ratio: 670/404;
+  object-fit: cover;
+  border-radius: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Button positioning */
+.about-content .cta-button {
+  margin-top: 0;
+  align-self: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .about-container {
+    gap: 60px;
+    padding: 0 30px;
+  }
+  
+  .about-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 80px 0;
+  }
+  
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .about-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .about-description {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .about-content .cta-button {
+    align-self: center;
+  }
+  
+  .about-image {
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 60px 0;
+  }
+  
+  .about-title {
+    font-size: 24px;
+    line-height: 130%;
+  }
+  
+  .about-description {
+    font-size: 14px;
+    line-height: 160%;
+    margin-bottom: 25px;
+  }
+}

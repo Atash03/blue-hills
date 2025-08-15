@@ -1,0 +1,29 @@
+{% css %}
+{% include "css/home/about-section.css" %}
+{% endcss %}
+
+<section class="about-section">
+  <div class="about-container">
+    <!-- Left content -->
+    <div class="about-content">
+      <h2 class="about-title">About us</h2>
+      <p class="about-description">
+        Founded in 2022 and launching production in early 2025, Blue Hills PM is Turkmenistan's new-generation paper manufacturer, dedicated to producing premium white office paper for both local and international markets. Equipped with cutting-edge technology and a strong focus on quality, we manufacture smooth, bright, and durable paper tailored for high-speed copiers, printers, and publishing applications. Our top-grade offset and copy paper is known for sharp image reproduction and reliable performance. Whether it's printing corporate contracts or publishing textbooks at scale — Blue Hills delivers with precision, every time.
+      </p>
+      
+      {% set buttonText = "Learn more" %}
+      {% set buttonVariant = "primary" %}
+      {% include "components/shared/button.njk" %}
+    </div>
+    
+    <!-- Right content -->
+    <div class="about-image">
+      <img 
+        src="https://api.builder.io/api/v1/image/assets/TEMP/aa539ba8498b51fc6c8324959e3fbf233270cbc1?width=1340" 
+        alt="Blue Hills PM team members"
+        class="team-image"
+      />
+      <div class="blue-rectangle"></div>
+    </div>
+  </div>
+</section>

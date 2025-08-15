@@ -1,0 +1,100 @@
+.hero-section {
+  width: 100%;
+  padding: 54px 0 40px;
+  background: #fff;
+  position: relative;
+}
+
+.hero-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.indicator {
+  width: 50px;
+  height: 4px;
+  border-radius: 1px;
+  background: #e6e7e8;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background: #00aeef;
+}
+
+.hero-content {
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.hero-subtitle {
+  color: #00aeef;
+  text-align: center;
+  font-family: "Outfit", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  color: #29255f;
+  text-align: center;
+  font-family: "Outfit", -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0 30px;
+  }
+  
+  .hero-container {
+    padding: 0 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+  }
+  
+  .hero-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  
+  .indicator {
+    width: 40px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-subtitle {
+    font-size: 16px;
+  }
+  
+  .hero-title {
+    font-size: 28px;
+  }
+  
+  .indicator {
+    width: 30px;
+    gap: 10px;
+  }
+}
