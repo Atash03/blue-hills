@@ -13,21 +13,22 @@ const eleventyNavigation = {
 {% endjs %}
 
 <div class="feedback-page">
-  <div class="feedback-header">
-    <div class="go-back-button">
-      <div class="go-back-icon">
-        <svg width="20" height="20" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7.01409 14.085L12.7593 8.33973C12.8765 8.22252 13.0355 8.15668 13.2013 8.15668C13.367 8.15668 13.526 8.22252 13.6432 8.33973C13.7604 8.45694 13.8263 8.61592 13.8263 8.78168C13.8263 8.94744 13.7604 9.10641 13.6432 9.22362L8.96471 13.9021L21.5982 13.9016C21.764 13.9016 21.9231 13.9675 22.0404 14.0847C22.1576 14.202 22.2235 14.3611 22.2235 14.5269C22.2235 14.6928 22.1576 14.8518 22.0404 14.9691C21.9231 15.0864 21.764 15.1523 21.5982 15.1523L8.96471 15.1517L13.6432 19.8302C13.7604 19.9474 13.8263 20.1064 13.8263 20.2722C13.8263 20.4379 13.7604 20.5969 13.6432 20.7141C13.526 20.8313 13.367 20.8972 13.2013 20.8972C13.0355 20.8972 12.8765 20.8313 12.7593 20.7141L7.01409 14.9689C6.89688 14.8517 6.83103 14.6927 6.83103 14.5269C6.83103 14.3612 6.89688 14.2022 7.01409 14.085Z" fill="#29255F"/>
-        </svg>
-      </div>
-      <span class="go-back-text">Go back</span>
-    </div>
-  </div>
 
   <div class="feedback-content">
     <div class="page-header">
       <p class="page-subtitle">Product quality and labeling issue report</p>
       <h1 class="page-title">Feedback & complaints</h1>
+
+      <div class="feedback-header">
+        <div class="go-back-button">
+          <div class="go-back-icon">
+            <svg width="20" height="20" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.01409 14.085L12.7593 8.33973C12.8765 8.22252 13.0355 8.15668 13.2013 8.15668C13.367 8.15668 13.526 8.22252 13.6432 8.33973C13.7604 8.45694 13.8263 8.61592 13.8263 8.78168C13.8263 8.94744 13.7604 9.10641 13.6432 9.22362L8.96471 13.9021L21.5982 13.9016C21.764 13.9016 21.9231 13.9675 22.0404 14.0847C22.1576 14.202 22.2235 14.3611 22.2235 14.5269C22.2235 14.6928 22.1576 14.8518 22.0404 14.9691C21.9231 15.0864 21.764 15.1523 21.5982 15.1523L8.96471 15.1517L13.6432 19.8302C13.7604 19.9474 13.8263 20.1064 13.8263 20.2722C13.8263 20.4379 13.7604 20.5969 13.6432 20.7141C13.526 20.8313 13.367 20.8972 13.2013 20.8972C13.0355 20.8972 12.8765 20.8313 12.7593 20.7141L7.01409 14.9689C6.89688 14.8517 6.83103 14.6927 6.83103 14.5269C6.83103 14.3612 6.89688 14.2022 7.01409 14.085Z" fill="#29255F"/>
+            </svg>
+          </div>
+          <span class="go-back-text">Go back</span>
+        </div>
+      </div>
     </div>
 
     <div class="divider-gradient"></div>
@@ -46,15 +47,13 @@ const eleventyNavigation = {
 
         <div class="form-group">
           <label class="form-label">Contact Person:</label>
-          <div class="form-row">
-            <input type="text" id="contact-name" name="contact-name" class="form-input" placeholder="Name">
-            <input type="text" id="contact-lastname" name="contact-lastname" class="form-input" placeholder="Lastname">
-          </div>
+          <input type="text" id="contact-name" name="contact-name" class="form-input" placeholder="Name">
+          <input type="text" id="contact-lastname" name="contact-lastname" class="form-input" placeholder="Lastname">
         </div>
 
         <div class="form-group">
           <label for="company-name" class="form-label">Company Name:</label>
-          <input type="text" id="company-name" name="company-name" class="form-input" placeholder="address@mail.com">
+          <input type="email" id="company-email" name="company-email" class="form-input" placeholder="address@mail.com">
         </div>
 
         <div class="form-group">
@@ -86,39 +85,11 @@ const eleventyNavigation = {
           <label for="complaint-description" class="form-label">Complaint Description:</label>
           <textarea id="complaint-description" name="complaint-description" class="form-textarea" placeholder="Message"></textarea>
         </div>
-
-        <button type="submit" class="submit-button">
-          <span>Submit</span>
-          <div class="submit-icon">
-            <svg width="31" height="33" viewBox="0 0 31 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_submit_button)">
-                <path d="M100.875 22.32C101.429 10.54 100.875 4.34 97 0H115.821L128 12.4V33.48C119.143 17.36 100.875 22.32 100.875 22.32Z" fill="url(#paint0_linear_submit_button)" transform="scale(0.24)"/>
-                <path d="M128 0H97C105.304 4.96 125.401 21.8348 128 33.48V0Z" fill="white" transform="scale(0.24)"/>
-              </g>
-              <defs>
-                <filter id="filter0_d_submit_button" x="82" y="-5" width="51" height="53.48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                  <feOffset dx="-5" dy="5"/>
-                  <feGaussianBlur stdDeviation="5"/>
-                  <feComposite in2="hardAlpha" operator="out"/>
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_submit_button"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_submit_button" result="shape"/>
-                </filter>
-                <linearGradient id="paint0_linear_submit_button" x1="112.5" y1="0" x2="112.5" y2="33.48" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#29255F"/>
-                  <stop offset="1" stop-color="#00AEEF"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-        </button>
+        
+        {% set buttonText = "Submit" %}
+        {% set buttonVariant = "primary" %}
+        {% include "components/shared/button.njk" %}
       </form>
-    </div>
-
-    <div class="background-image">
-      <img src="https://api.builder.io/api/v1/image/assets/TEMP/0c4f3120e908fcb4b931fb9804bbce97184cc6ca?width=1650" alt="Paper manufacturing background" />
     </div>
   </div>
 </div>

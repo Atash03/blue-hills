@@ -32,7 +32,6 @@
   max-width: 993px;
   height: 500px;
   background: #29255F;
-  overflow: hidden;
   z-index: 1001;
 }
 
@@ -40,10 +39,11 @@
   position: absolute;
   top: 0;
   right: 0;
+  bottom: 0;
   width: 467px;
   height: 728px;
   overflow: hidden;
-  transform: translateY(-186px);
+  overflow: hidden;
 }
 
 .modal-bg-image {
@@ -76,11 +76,10 @@
 .modal-inner {
   position: relative;
   z-index: 1001;
-  padding: 40px 147px 40px 147px;
+  padding: 40px 147px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .modal-title {
@@ -91,7 +90,8 @@
   line-height: 140%;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 90px 0;
+  margin: 0;
+  flex: 1;
 }
 
 .certifications-list {
@@ -142,10 +142,12 @@
 }
 
 .modal-divider {
-  width: 100%;
+  position: absolute;
+  top: -10px;
+  left: 10%;
+  width: 80%;
   height: 10px;
   background: #00AEEF;
-  margin-top: 40px;
 }
 
 /* Animation */

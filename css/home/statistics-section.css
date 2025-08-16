@@ -34,21 +34,81 @@
 	object-fit: cover;
 }
 
+/* Tablet Landscape */
 @media (max-width: 1200px) {
+	.statistics-section {
+		padding: 0 30px;
+	}
+
 	.statistics-background {
-		height: 700px;
-		padding: 0 20px;
+		height: 650px;
+	}
+
+	.statistics-image {
+		max-height: 500px;
 	}
 }
 
+/* Tablet Portrait */
+@media (max-width: 1024px) {
+	.statistics-section {
+		padding: 0 20px;
+	}
+
+	.statistics-background {
+		height: 600px;
+	}
+
+	.statistics-image {
+		max-height: 450px;
+	}
+}
+
+/* Mobile Landscape */
 @media (max-width: 768px) {
+	.statistics-section {
+		padding: 0 15px;
+	}
+
+	.statistics-background {
+		height: 550px;
+	}
+
+	.statistics-image {
+		max-height: 400px;
+	}
+
+	.image-decoration {
+		height: 10px;
+	}
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+	.statistics-section {
+		padding: 0 10px;
+	}
+
 	.statistics-background {
 		height: 500px;
 	}
+
+	.statistics-image {
+		max-height: 350px;
+	}
+
+	.image-decoration {
+		height: 8px;
+	}
 }
 
-@media (max-width: 480px) {
+/* Small Mobile */
+@media (max-width: 360px) {
 	.statistics-background {
-		height: 400px;
+		height: 450px;
+	}
+
+	.statistics-image {
+		max-height: 300px;
 	}
 }

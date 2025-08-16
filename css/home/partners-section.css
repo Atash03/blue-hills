@@ -1,6 +1,6 @@
 .partners-section {
   background: #fff;
-  padding: 80px 40px;
+  padding: 100px 40px 40px 40px;
 }
 
 .partners-content {
@@ -15,15 +15,15 @@
   font-weight: 700;
   line-height: 140%;
   text-transform: uppercase;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .partners-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   align-items: center;
-  justify-content: center;
   gap: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   flex-wrap: wrap;
 }
 
@@ -55,22 +55,21 @@
 
 .divider-arrow {
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-20%, -24%);
+  rotate: 90deg;
   width: 44px;
   height: 47px;
   z-index: 2;
 }
 
 .divider-small {
-  width: 80px;
-  height: 1px;
+  height: 40px;
+  width: 1px;
   background: #00AEEF;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: -50%;
   z-index: 1;
 }
 
@@ -86,6 +85,7 @@
   }
   
   .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
   

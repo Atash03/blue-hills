@@ -1,20 +1,17 @@
 .feedback-section {
   background: #00AEEF;
-  padding: 40px 50px 40px 40px;
-  margin: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 148px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .feedback-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1360px;
   gap: 60px;
+  width: 100%;
+  padding: 40px 50px 40px 40px;
 }
 
 .feedback-title {
@@ -46,6 +43,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .feedback-button:hover {
@@ -57,7 +55,6 @@
 @media (max-width: 768px) {
   .feedback-section {
     padding: 30px 20px;
-    margin: 0 20px;
     flex-direction: column;
     gap: 30px;
   }

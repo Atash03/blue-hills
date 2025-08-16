@@ -3,56 +3,29 @@
     <p class="contact-subtitle">We'd Love to Hear From You</p>
     <h2 class="contact-title">Contact us</h2>
   </div>
-  
   <div class="contact-form-container">
     <form class="contact-form">
       <div class="form-group">
         <label class="form-label">Name, Lastname:</label>
-        <input type="text" class="form-input" placeholder="Name" />
+        <input type="text" class="form-input" placeholder="Name"/>
       </div>
-      
       <div class="form-group">
-        <label class="form-label">Phone: <span class="optional">(Optional)</span></label>
-        <input type="tel" class="form-input" placeholder="+993" />
+        <label class="form-label">Phone:
+          <span class="optional">(Optional)</span>
+        </label>
+        <input type="tel" class="form-input" placeholder="+993"/>
       </div>
-      
       <div class="form-group">
         <label class="form-label">Email:</label>
-        <input type="email" class="form-input" placeholder="address@mail.com" />
+        <input type="email" class="form-input" placeholder="address@mail.com"/>
       </div>
-      
       <div class="form-group">
         <label class="form-label">Message:</label>
         <textarea class="form-textarea" placeholder="Text"></textarea>
       </div>
-      
-      <button type="submit" class="contact-button">
-        <span>Send message</span>
-        <div class="contact-button-icon">
-          <svg width="31" height="33" viewBox="0 0 31 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d_contact_button)">
-              <path d="M159.875 22.32C160.429 10.54 159.875 4.34 156 0H174.821L187 12.4V33.48C178.143 17.36 159.875 22.32 159.875 22.32Z" fill="url(#paint0_linear_contact_button)" transform="scale(0.18)"/>
-              <path d="M187 0H156C164.304 4.96 184.401 21.8348 187 33.48V0Z" fill="white" transform="scale(0.18)"/>
-            </g>
-            <defs>
-              <filter id="filter0_d_contact_button" x="141" y="-5" width="51.0001" height="53.48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                <feOffset dx="-5" dy="5"/>
-                <feGaussianBlur stdDeviation="5"/>
-                <feComposite in2="hardAlpha" operator="out"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_contact_button"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_contact_button" result="shape"/>
-              </filter>
-              <linearGradient id="paint0_linear_contact_button" x1="171.5" y1="0" x2="171.5" y2="33.48" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#29255F"/>
-                <stop offset="1" stop-color="#00AEEF"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </button>
+      {% set buttonText = "Send message" %}
+      {% set buttonVariant = "primary" %}
+      {% include "components/shared/button.njk" %}
     </form>
   </div>
 </section>

@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Contact us
+  order: 5
+---
+
+{% css %}
+{% include "css/contact/index.css" %}
+{% include "css/home/contact-section.css" %}
+{% include "css/home/feedback-section.css" %}
+{% include "css/home/footer-section.css" %}
+{% endcss %}
+
+<div class="contact-page">
+  <!-- Background Image -->
+  {# <div class="contact-background">
+    <img src="https://api.builder.io/api/v1/image/assets/TEMP/675c16498198ebb2cdc8ad242e2ba989ed08a9b4?width=1650" alt="Blue Hills manufacturing background" />
+  </div> #}
+
+  <!-- Contact Form Section -->
+  {% include "components/home/contact-section.njk" %}
+
+  <!-- Feedback Section -->
+  {% include "components/home/feedback-section.njk" %}
+
+  <!-- Footer Section with Map and Contact Info -->
+  {% include "components/home/footer-section.njk" %}
+</div>

@@ -3,6 +3,7 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: space-between;
+	width: fit-content;
 	height: 55px;
 	padding: 16px 40px 16px 30px;
 	background: #00aeef;
